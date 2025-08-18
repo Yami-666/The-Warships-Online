@@ -5,10 +5,10 @@ plugins {
   application
 }
 
-group = "com.trishin666.thewarshipsonline"
+group = "com.trishin.thewarshipsonline"
 version = "1.0.0"
 application {
-  mainClass.set("com.trishin666.thewarshipsonline.ApplicationKt")
+  mainClass.set("com.trishin.thewarshipsonline.ApplicationKt")
   applicationDefaultJvmArgs = listOf("-Dio.ktor.development=${extra["development"] ?: "false"}")
 }
 

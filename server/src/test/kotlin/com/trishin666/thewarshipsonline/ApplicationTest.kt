@@ -1,0 +1,42 @@
+ package com.trishin.thewarshipsonline
+
+import UserData
+import UserService
+import io.ktor.server.testing.testApplication
+import kotlinx.coroutines.flow.toList
+import kotlinx.rpc.krpc.ktor.client.installKrpc
+import kotlinx.rpc.krpc.ktor.client.rpc
+import kotlinx.rpc.krpc.ktor.client.rpcConfig
+import kotlinx.rpc.krpc.serialization.json.json
+import kotlinx.rpc.withService
+import kotlin.test.Test
+import kotlin.test.assertEquals
+
+class ApplicationTest {
+  @Test
+  fun testRoot() = testApplication {
+    application {
+      module()
+    }
+
+    val service = createClient {
+      installKrpc()
+    }.rpc("/api") {
+      rpcConfig {
+        serialization {
+          json()
+        }
+      }
+    }.withService<UserService>()
+
+    assertEquals(
+      expected = "Nice to meet you Alex, how is it in address1?",
+      actual = service.hello("Alex", UserData("address1", "last")),
+    )
+
+    assertEquals(
+      expected = List(10) { "Article number $it" },
+      actual = service.subscribeToNews().toList(),
+    )
+  }
+}

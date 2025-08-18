@@ -88,7 +88,7 @@ kotlin {
 }
 
 android {
-  namespace = "com.trishin666.thewarshipsonline"
+  namespace = "com.trishin.thewarshipsonline"
   compileSdk = libs.versions.android.compileSdk.get().toInt()
 
   sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -96,7 +96,7 @@ android {
   sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 
   defaultConfig {
-    applicationId = "com.trishin666.thewarshipsonline"
+    applicationId = "com.trishin.thewarshipsonline"
     minSdk = libs.versions.android.minSdk.get().toInt()
     targetSdk = libs.versions.android.targetSdk.get().toInt()
     versionCode = 1
@@ -127,7 +127,7 @@ compose.desktop {
 
     nativeDistributions {
       targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-      packageName = "com.trishin666.thewarshipsonline"
+      packageName = "com.trishin.thewarshipsonline"
       packageVersion = "1.0.0"
     }
   }

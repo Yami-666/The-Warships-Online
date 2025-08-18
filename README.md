@@ -22,15 +22,8 @@ showcase kRPC usage.
   The most important subfolder is `commonMain`. If preferred, you can add code to the
   platform-specific folders here too.
 
-Learn more
-about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
+Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html), [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
 
 # Run configurations
 
-If
-your [developmant environment is set up correctly](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-setup.html),
-[Fleet](https://www.jetbrains.com/fleet/) will provide you with all needed run configurations.
-If you don't use Fleet, you can check
-out [this guide](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html#run-your-application)
-on running KMP projects.
+Сheck out [this guide](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html#run-your-application)on running KMP projects.

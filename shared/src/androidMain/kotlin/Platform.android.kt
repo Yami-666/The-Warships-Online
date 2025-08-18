@@ -1,3 +1,5 @@
+package com.trishin.thewarshipsonline.shared
+
 import android.os.Build
 
 class AndroidPlatform : Platform {
