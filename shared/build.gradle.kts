@@ -47,6 +47,9 @@ kotlin {
       implementation(libs.kotlinx.serialization.core)
       implementation(libs.kotlinx.serialization.json)
     }
+    androidMain.dependencies {
+      implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    }
   }
 }
 

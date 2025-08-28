@@ -16,9 +16,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.trishin.thewarshipsonline.shared.UserData
-import com.trishin.thewarshipsonline.shared.UserService
-import com.trishin.thewarshipsonline.shared.getPlatform
+import com.trishin.thewarshipsonline.shared.services.UserData
+import com.trishin.thewarshipsonline.shared.services.UserService
 import io.ktor.client.HttpClient
 import io.ktor.http.encodedPath
 import kotlinx.coroutines.flow.catch
@@ -67,7 +66,7 @@ fun App() {
 
     LaunchedEffect(service) {
       greeting = service.hello(
-        "User from ${getPlatform().name} platform",
+        "User",
         UserData("Berlin", "Smith")
       )
     }
