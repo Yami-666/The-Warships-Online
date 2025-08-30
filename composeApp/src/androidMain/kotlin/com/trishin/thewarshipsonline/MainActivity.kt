@@ -11,7 +11,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
 
     setContent {
-      TheWarshipsGameApp()
+      MviSampleApp()
     }
   }
 }
@@ -19,5 +19,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-  GameFieldScreen()
+  TheWarshipsGameApp()
 }

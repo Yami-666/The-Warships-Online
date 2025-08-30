@@ -1,14 +1,7 @@
-package com.trishin.thewarshipsonline.shared
+package com.trishin.thewarshipsonline.shared.services
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.rpc.annotations.Rpc
-import kotlinx.serialization.Serializable
-
-@Serializable
-data class UserData(
-  val address: String,
-  val lastName: String,
-)
 
 @Rpc
 interface UserService {
