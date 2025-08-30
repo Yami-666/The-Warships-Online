@@ -1,4 +1,4 @@
-package com.trishin.thewarshipsonline.shared
+package com.trishin.thewarshipsonline.shared.mvi.viewmodel
 
 typealias SimpleStoreViewModelFactory<Intent, Message, State> = StoreViewModelFactory<Intent, Message, Unit, State>
 

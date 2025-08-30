@@ -46,9 +46,7 @@ kotlin {
       implementation(libs.kotlinx.rpc.core)
       implementation(libs.kotlinx.serialization.core)
       implementation(libs.kotlinx.serialization.json)
-    }
-    androidMain.dependencies {
-      implementation(libs.androidx.lifecycle.viewmodel.ktx)
+      implementation(libs.lifecycle.viewmodel.compose)
     }
   }
 }

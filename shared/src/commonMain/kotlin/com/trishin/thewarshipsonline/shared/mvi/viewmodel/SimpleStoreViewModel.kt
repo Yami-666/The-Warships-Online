@@ -1,9 +1,8 @@
-package com.trishin.thewarshipsonline.shared
+package com.trishin.thewarshipsonline.shared.mvi.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.trishin.thewarshipsonline.shared.mvi.Store
-import com.trishin.thewarshipsonline.shared.mvi.StoreViewModelContract
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
